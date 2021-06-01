@@ -1,0 +1,15 @@
+<div class="product-details" *ngIf="book; else help" style="text-align: center">
+    <img [src]="book.coverImage" alt="cover image" />
+    <h2>{{ book.title }}</h2>
+    <p>{{ book.description }}</p>
+    <p style="text-align: left; color: #666;">{{book.published}}</p>
+    <button mat-stroked-button color="warn" style="width: 100%;" (click)="deleteBook(book.isbn)">Delete Book</button>
+</div>
+
+<ng-template #help>
+    <div class="help">
+        <img src="assets/images/book.svg" alt="book" width="150px">
+        <h3>Seleccione un libro</h3>
+    </div>
+</ng-template>
+

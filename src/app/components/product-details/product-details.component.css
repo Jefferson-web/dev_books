@@ -1,0 +1,16 @@
+.help {
+  margin: 20px 0px;
+}
+
+.help img {
+  opacity: 0.15;
+  display: flex;
+  margin: auto;
+}
+
+.help h3 {
+  opacity: 0.2;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}

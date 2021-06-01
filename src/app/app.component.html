@@ -1,0 +1,29 @@
+<h1 class="margin">Book List</h1>
+<hr />
+<div class="container">
+  <div class="grid">
+    <ul class="list">
+      <li
+        class="list-item"
+        *ngFor="let book of booksList"
+        (click)="getBookDetails(book.isbn)"
+      >
+        <div class="cover-image-container">
+          <img [src]="book.coverImage" alt="cover image" />
+        </div>
+        <div class="book-details">
+          <div class="book-title">{{ book.title }}</div>
+          <div class="book-author">{{ book.authors }}</div>
+        </div>
+      </li>
+    </ul>
+    <div class="margin">
+      <product-details [book]="selectedBook" (onDelete)="deleteBook($event)"></product-details>
+    </div>
+  </div>
+</div>
+<mat-form-field class="example-full-width">
+  <mat-label>Favorite food</mat-label>
+  <input name="input" #input matInput placeholder="Ex. Hello">
+</mat-form-field>
+<button name="btn" id="btn" mat-button style="margin: 20px;" #btn>fromEvent</button>
