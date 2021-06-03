@@ -13,9 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { RouterModule } from '@angular/router';
 import ROUTES_APP from './app-routing.module';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductDetailsComponent, SearchProductComponent, HomeComponent, NotfoundComponent],
+  declarations: [AppComponent, ProductDetailsComponent, SearchProductComponent, HomeComponent, NotfoundComponent, TestComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
